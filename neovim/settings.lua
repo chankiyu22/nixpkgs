@@ -8,9 +8,6 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
 -- indent-blankline
-require("indent_blankline").setup({
-	show_current_context = true,
-})
 vim.opt.list = true
 vim.opt.listchars = {
 	lead = "⋅",
@@ -39,4 +36,6 @@ vim.opt.hidden = true
 -- Helpful column line
 vim.wo.colorcolumn = "80,120"
 
-
+-- require
+require('plugins.intentblankline')
+require('plugins.telescope')

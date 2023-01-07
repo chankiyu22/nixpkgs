@@ -2,6 +2,7 @@
 
 {
   xdg.configFile."nvim/settings.lua".source = lib.cleanSource ./neovim/settings.lua;
+  xdg.configFile."nvim/lua/plugins".source = lib.cleanSource ./neovim/plugins;
 
   programs.neovim = {
 
@@ -15,8 +16,9 @@
     '';
 
     plugins = with pkgs.vimPlugins; [
-      # indentation
       indent-blankline-nvim
+      nvim-treesitter
+      telescope-nvim
     ];
   };
 }

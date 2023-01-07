@@ -12,6 +12,11 @@ in {
   home.username = "kchan";
   home.homeDirectory = "/Users/kchan";
 
+  home.packages = with pkgs; [
+    fd
+    ripgrep
+  ];
+
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
   # when a new Home Manager release introduces backwards
