@@ -3,6 +3,7 @@
 let
   imports = [
     ./neovim.nix
+    ./tmux.nix
   ];
 in {
   inherit imports;
@@ -15,6 +16,7 @@ in {
   home.packages = with pkgs; [
     fd
     ripgrep
+    tmux
   ];
 
   # This value determines the Home Manager release that your
