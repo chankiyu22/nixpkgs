@@ -95,6 +95,7 @@ in
       lspkind-nvim
     ] ++ [
       # theme
+      lualine-nvim
       tokyonight-nvim
     ];
   };
