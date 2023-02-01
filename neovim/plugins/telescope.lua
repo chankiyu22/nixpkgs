@@ -27,6 +27,11 @@ require("telescope").setup({
 			},
 		},
 	},
+	pickers = {
+		find_files = {
+			previewer = false,
+		},
+	},
 })
 
 vim.api.nvim_set_keymap("n", "<C-p>", "<cmd>Telescope find_files<cr>", { noremap = true, silent = true })
