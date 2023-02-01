@@ -15,6 +15,8 @@ local make_on_attach = function(options)
 
 		vim.keymap.set("n", "gd", vim.lsp.buf.definition, bufopts)
 		vim.keymap.set("n", "gi", vim.lsp.buf.implementation, bufopts)
+		vim.keymap.set("n", "gf", vim.lsp.buf.format, bufopts)
+		vim.keymap.set("n", "gr", vim.lsp.buf.references, bufopts)
 		vim.keymap.set("n", "K", vim.lsp.buf.hover, bufopts)
 		vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, bufopts)
 
@@ -66,5 +68,3 @@ lspconfig["tsserver"].setup({
 
 vim.api.nvim_set_keymap("n", "<C-n>", ":CodeActionMenu<CR>", { noremap = true, silent = true })
 vim.g.code_action_menu_show_details = false
-
-vim.cmd("command F lua vim.lsp.buf.format{}")
