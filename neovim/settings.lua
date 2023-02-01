@@ -37,5 +37,15 @@ vim.opt.hidden = true
 vim.wo.colorcolumn = "80,120"
 
 -- require
+require('plugins.autopairs')
+require('plugins.cmp')
+require('plugins.gitsigns')
 require('plugins.intentblankline')
+require('plugins.lsp')
+require('plugins.mason')
+require('plugins.nullls')
 require('plugins.telescope')
+require('plugins.tree')
+require('plugins.treesitter')
+require('plugins.tsautotag')
+require('theme')
