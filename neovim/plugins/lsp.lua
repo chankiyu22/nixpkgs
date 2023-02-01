@@ -66,3 +66,5 @@ lspconfig["tsserver"].setup({
 
 vim.api.nvim_set_keymap("n", "<C-n>", ":CodeActionMenu<CR>", { noremap = true, silent = true })
 vim.g.code_action_menu_show_details = false
+
+vim.cmd("command F lua vim.lsp.buf.format{}")
