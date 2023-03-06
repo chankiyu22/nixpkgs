@@ -15,6 +15,7 @@ in {
 
   home.packages = with pkgs; [
     fd
+    inetutils
     ripgrep
     tmux
   ];
