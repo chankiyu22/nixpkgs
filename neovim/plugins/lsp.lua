@@ -19,6 +19,9 @@ local make_on_attach = function(options)
 		vim.keymap.set("n", "gr", vim.lsp.buf.references, bufopts)
 		vim.keymap.set("n", "K", vim.lsp.buf.hover, bufopts)
 		vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, bufopts)
+		vim.keymap.set("n", "<space>f", function()
+			vim.lsp.buf.format({ async = true })
+		end, bufopts)
 
 		local disable_formatting = options.disable_formatting or false
 		if disable_formatting then
