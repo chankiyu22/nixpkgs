@@ -16,6 +16,9 @@ vim.opt.listchars = {
 	tab = ">-",
 }
 
+-- scroll
+vim.opt.scrolloff = 5
+
 -- search
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
