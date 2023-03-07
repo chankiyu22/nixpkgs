@@ -69,6 +69,7 @@ in
       nvim-tree-lua
       nvim-ts-autotag
       nvim-treesitter
+      nvim-treesitter-context
       nvim-web-devicons
       telescope-nvim
       vim-commentary
