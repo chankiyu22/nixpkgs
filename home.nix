@@ -15,7 +15,10 @@ in {
 
   home.packages = with pkgs; [
     fd
+    git-filter-repo
     inetutils
+    lazygit
+    openfortivpn
     ripgrep
     tmux
   ];
