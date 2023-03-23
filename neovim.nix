@@ -65,6 +65,7 @@ in
     plugins = with pkgs.vimPlugins; [
       gitsigns-nvim
       indent-blankline-nvim
+      lazygit-nvim
       nvim-autopairs
       nvim-tree-lua
       nvim-ts-autotag
