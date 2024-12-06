@@ -55,6 +55,12 @@ in
     '';
 
     extraPackages = with pkgs; [
+      # formatter
+      nixpkgs-fmt
+
+      # golang
+      gopls
+
       # js/ts
       nodePackages.typescript
       nodePackages.typescript-language-server
@@ -63,6 +69,7 @@ in
     ];
 
     plugins = with pkgs.vimPlugins; [
+      formatter-nvim
       gitsigns-nvim
       indent-blankline-nvim
       lazygit-nvim

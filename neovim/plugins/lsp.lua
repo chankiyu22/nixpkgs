@@ -38,20 +38,6 @@ end
 -- 	capabilities = capabilities,
 -- })
 
--- lua
-lspconfig["sumneko_lua"].setup({
-	on_attach = make_on_attach({
-		disable_formatting = true,
-	}),
-	settings = {
-		Lua = {
-			diagnostics = {
-				globals = { "vim" },
-			},
-		},
-	},
-})
-
 -- nix
 lspconfig["rnix"].setup({
 	on_attach = make_on_attach({}),
@@ -63,10 +49,15 @@ lspconfig["rnix"].setup({
 -- })
 
 -- typescript
-lspconfig["tsserver"].setup({
+lspconfig["ts_ls"].setup({
 	on_attach = make_on_attach({
 		disable_formatting = true,
 	}),
+})
+
+-- golang
+lspconfig["gopls"].setup({
+	on_attach = make_on_attach({}),
 })
 
 vim.api.nvim_set_keymap("n", "<C-n>", ":CodeActionMenu<CR>", { noremap = true, silent = true })

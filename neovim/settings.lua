@@ -42,6 +42,7 @@ vim.wo.colorcolumn = "80,120"
 -- require
 require('plugins.autopairs')
 require('plugins.cmp')
+require('plugins.formatter')
 require('plugins.gitsigns')
 require('plugins.intentblankline')
 require('plugins.lsp')
